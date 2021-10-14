@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Опрос</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts/rubik/rubik-font.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="conteiner">
+			<form name="answers">
+				<div class="conteiner__header"></div>
+				<div class="conteiner__options"></div>
+				<div class="conteiner__footer">
+					<div class="progress">
+						<span class="progress__text">Готово:</span>
+						<span class="progress__procent">
+							<span class="procent">0</span>
+							<span>%</span>
+						</span>
+						<div class="progress__line">
+							<div class="color-line"></div>
+						</div>
+					</div>
+					<div class="navigation">
+						<button class="navigation__back" onclick="backQuestion(); return false;">
+							<img class="back-img" src="img/arrow-back.svg">
+						</button>
+						<button class="navigation__future" onclick="nextQuestion(); return false;">
+							<span class="future-text">Далее</span>
+							<img class="future-img" src="img/arrow.svg">
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
